@@ -5,16 +5,16 @@ let customers =[
     email:'rama@abc.com',phone:'653423662', address:'Asia', dob:new Date()}
   ];
 
-if(localStorage.getItem('_customers') != null){
+if(window.localStorage.getItem('_customers') != null){
     try{
-       let temp = JSON.parse(localStorage.getItem('_customers'));
+       let temp = JSON.parse(window.localStorage.getItem('_customers'));
        customers = temp;
     }catch(e){
     }
 }
 
 let saveLocalStorage = () =>{
-    localStorage.setItem('_customers',JSON.stringify(customers));
+    window.localStorage.setItem('_customers',JSON.stringify(customers));
 }
 export const getCustomers = () =>(customers);
 

@@ -5,6 +5,7 @@ function Menu() {
          <div>
             <Link to={'/home'}>Home</Link> &nbsp;|  &nbsp;
             <Link to={'/customer'}>Customers</Link>  &nbsp;|  &nbsp;
+            <Link to={'/customer-api'}>CustomersAPI</Link>  &nbsp;|  &nbsp;
             <Link to={'/about'}>About</Link>  &nbsp;|  &nbsp;
             <Link to={'/login'}>Logout</Link>
             <hr /> 
